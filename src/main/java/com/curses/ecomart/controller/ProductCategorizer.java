@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/products")
-public class ProductsGenerator {
+public class ProductCategorizer {
     private final ChatClient chatClient;
-    public ProductsGenerator(ChatClient.Builder chatClientBuilder) {
+    public ProductCategorizer(ChatClient.Builder chatClientBuilder) {
         this.chatClient = chatClientBuilder.build();
     }
     @GetMapping
